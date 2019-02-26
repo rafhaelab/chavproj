@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+/* GENERAL */
+body {
+  background: #3B7577;
+  font-family: 'ARIAL', sans-serif;
+  letter-spacing: 0.5px;
+}
+*:focus {
+  outline-color: #00BF8F;
+}
+
+/* SECTION WRAPPER */
+.wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+
+/* TYPOGRAPHY */ 
+h {
+  font-size: 60px;
+  font-family: 'ARIAL', serif;
+  margin-bottom: 100px;
+   
+}
+form p {
+  font-family: 'ARIAL', serif;
+  font-size: 25px;
+  margin: 50px 0 20px; 
+  line-height:1;
+margin-top:70px;
+}
+form p1 {
+  font-family: 'ARIAL', serif;
+  font-size: 25px;
+  margin: 50px 0 20px;  
+  line-height:3;
+}
+
+
+form p,form p1,
+label[for="senha"],
+label[for="obs"] {
+ padding-right: 710px;
+ padding-bottom: 7px;
+  border-bottom: 2.5px solid #00BF8F;
+  
+}
+label[for="wish_payment_type_6"],label[for="wish_payment_type_2"],label[for="wish_payment_type_3"],label[for="wish_payment_type_4"],label[for="wish_payment_type_5"] {margin-left:0px;font-size:20px}
+label[for="wish_payment_type_7"],label[for="wish_payment_type_8"],label[for="wish_payment_type_9"],label[for="wish_payment_type_10"],label[for="wish_payment_type_11"] {margin-left:30px;font-size:20px}
+label[for="wish_payment_type_12"],label[for="wish_payment_type_13"],label[for="wish_payment_type_14"] {margin-left:55px;font-size:20px}
+label[for="wish_payment_type_15"],label[for="wish_payment_type_16"] {margin-left:30px;font-size:20px}
+label[for="wish_payment_type_17"],label[for="wish_payment_type_18"] {margin-left:54px;font-size:20px}
+label[for="wish_payment_type_19"],label[for="wish_payment_type_20"],label[for="wish_payment_type_21"] {margin-left:30px;font-size:20px}
+label[for="wish_payment_type_22"],label[for="wish_payment_type_23"],label[for="wish_payment_type_24"],label[for="wish_payment_type_25"],label[for="wish_payment_type_26"] {margin-left:30px;font-size:20px}
+
+/* SECTION */
+section {
+  background: #ffffff;
+  padding: 20px 0;
+}
+
+/* FORM STYLES */
+.input-wrap {
+  margin-bottom: 10px;
+}
+select {
+  display: block;
+  margin-bottom: 50px;
+}
+
+ input[type="radio"]{
+  
+ margin-right: 0px;
+   margin-left: 0px;
+  margin-BOTTOM:10PX;
+    width:25PX;
+    height:40px;
+   
+}
+input[type="checkbox"] {
+  margin-right: 10px;
+  margin-BOTTOM:20PX;
+  width: 20PX;
+  height: 20px;
+ 
+}
+label[for="senha"] { margin-top: 20px;}
+
+label[for="senha"],
+label[for="obs"]{
+  display: block;
+  margin-bottom: 20px;
+  font-family: 'arial', serif;
+  font-size: 25px;
+  line-height: 1.6;
+}
+label[for="ret"],label[for="dev"]{
+  margin-bottom: 0px;
+  font-family: 'arial', serif;
+  font-size: 20px;
+
+}
+input[type="password"]{
+  width: 20%;
+  padding: 6px;
+  font-size: 16px;
+  border: 1px solid #00BF8F;
+  background: #DAEAE6;
+  margin-bottom: 25px;
+}
+textarea {
+  width: 50%;
+  padding: 6px;
+  font-size: 16px;
+  border: 1px solid #00BF8F;
+  background: #DAEAE6;
+  margin-bottom: 25px;
+}
+
+.input-wrap.select-box {
+  border: 1px solid #00BF8F;
+  background: #DAEAE6;
+  width: 50%;
+  height: 34px;
+  padding: 0px 10px;
+  margin-bottom: 50px;
+}
+
+.input-wrap.select-box:hover {
+  background: #00BF8F;
+}
+
+.input-wrap.select-box:hover select {
+   color: #fff;   
+}
+
+textarea {
+  min-height: 75px;
+}
+select {
+  border: none;
+  background: transparent;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.5px;
+  height: 34px;
+  width: 100%;
+}
+select:hover {
+  cursor: pointer;
+}
+input[type="submit"] {
+  display: block;
+  margin: 0px 0PX 0px 0PX;
+  height: 50px;
+  width: 200px;
+  font-family: 'ARIAL',BOLD, sans-serif;
+  letter-spacing: 0.5px;
+  background: #008463;
+  border: 0px solid;
+  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1.25px;
+}
+input[type="submit"]:hover {
+  background: #00BF8F;
+  cursor: pointer;
+}
+
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  function clickAlert() {
+    alert("SEU REGISTRO FOI REALIZADO COM SUCESSO, CLIQUE EM OK PARA FAZER UM NOVO REGISTRO!");
+ window.location.reload();
+}
+</script>
+<section>
+ <div class="wrapper">
+  <body>
+    <form id='foo'onsubmit="setTimeout(clickAlert, 3000);">
+      
+     <h><b>CONTROLE DE CHAVES E PROJETORES - LABORATÓRIOS DE INDÚSTRIA</b> </h>
+
+<p>RETIRADA OU DEVOLUÇÃO?</p>
+
+
+ 
+      <input type="radio" name="RETIRADA OU DEVOLUÇÃO ?"  value="RETIRADA"  style="vertical-align: middle; margin: 
+
+0px;" REQUIRED> 
+       <label for="ret">RETIRADA</label><br>
+      
+    
+      <input type="radio"  name="RETIRADA OU DEVOLUÇÃO ?"   value="DEVOLUÇÃO"  style="vertical-align: middle; margin: 
+
+0px;"REQUIRED> 
+      <label for="dev">DEVOLUÇÃO</label><br>
+
+
+<p1>ESCOLHA PELO MENOS UMA DAS OPÇÕES:</p1>
+ 
+   <div class="input check_boxes required wish_payment_type">
+    <div class="wish_payment_type">
+    <span class="checkbox payment-radio">
+      <label for="wish_payment_type_1">
+        <input class="check_boxes required" id="wish_payment_type_1" name="wish[payment_type][]_1" type="checkbox" 
+
+style="opacity:0; position:absolute; left:25px;" value="">
+      </label>
+    </span>
+    <span class="checkbox payment-radio">
+      <label for="wish_payment_type_2">
+        <input class="check_boxes required" id="wish_payment_type_2" name="wish[payment_type][]_2" type="checkbox" 
+
+value="DATASHOW_1">DATASHOW_1
+      </label> 
+       </span>
+      <span class="checkbox payment-radio">
+      <label for="wish_payment_type_7">
+        <input class="check_boxes required" id="wish_payment_type_7" name="wish[payment_type][]_7" type="checkbox" 
+
+value="LAB_903">LAB_903
+      </label>
+      </span>
+      <span class="checkbox payment-radio">
+      <label for="wish_payment_type_12">
+        <input class="check_boxes required" id="wish_payment_type_12" name="wish[payment_type][]_12" type="checkbox" 
+
+value="CL_01">CL_01
+      </label> 
+      </span>
+      <span class="checkbox payment-radio">
+     <label for="wish_payment_type_17">
+        <input class="check_boxes required" id="wish_payment_type_17" name="wish[payment_type][]_17" type="checkbox" 
+
+value="LAB_916">LAB_916
+      </label> 
+      </span>
+      <span class="checkbox payment-radio">
+     <label for="wish_payment_type_22">
+        <input class="check_boxes required" id="wish_payment_type_22" name="wish[payment_type][]_22" type="checkbox" 
+
+value="LAB_921">LAB_921
+      </label><br> 
+      </span>
+    <span class="checkbox payment-radio">
+      <label for="wish_payment_type_3">
+        <input class="check_boxes required" id="wish_payment_type_3" name="wish[payment_type][]_3" type="checkbox" 
+
+value="DATASHOW_2">DATASHOW_2
+      </label> 
+      </span>
+     <span class="checkbox payment-radio">
+      <label for="wish_payment_type_8">
+        <input class="check_boxes required" id="wish_payment_type_8" name="wish[payment_type][]_8" type="checkbox" 
+
+value="LAB_904">LAB_904
+      </label>
+      </span>
+       <span class="checkbox payment-radio">
+      <label for="wish_payment_type_13">
+        <input class="check_boxes required" id="wish_payment_type_13" name="wish[payment_type][]_13" type="checkbox" 
+
+value="CL_02">CL_02
+      </label> 
+      </span>
+      <span class="checkbox payment-radio">
+     <label for="wish_payment_type_18">
+        <input class="check_boxes required" id="wish_payment_type_18" name="wish[payment_type][]_18" type="checkbox" 
+
+value="LAB_917">LAB_917
+      </label>
+      </span>
+      <span class="checkbox payment-radio">
+     <label for="wish_payment_type_23">
+        <input class="check_boxes required" id="wish_payment_type_23" name="wish[payment_type][]_23" type="checkbox" 
+
+value="LAB_922">LAB_922
+      </label><br> 
+      </span>
+       <span class="checkbox payment-radio">
+      <label for="wish_payment_type_4">
+        <input class="check_boxes required" id="wish_payment_type_4" name="wish[payment_type][]_4" type="checkbox" 
+
+value="DATASHOW_3">DATASHOW_3
+      </label> 
+        </span>
+       <span class="checkbox payment-radio">
+      <label for="wish_payment_type_9">
+        <input class="check_boxes required" id="wish_payment_type_9" name="wish[payment_type][]_9" type="checkbox" 
+
+value="LAB_905">LAB_905
+      </label> 
+      </span>
+      <span class="checkbox payment-radio">
+      <label for="wish_payment_type_14">
+        <input class="check_boxes required" id="wish_payment_type_14" name="wish[payment_type][]_14" type="checkbox" 
+
+value="LAB_910">LAB_910
+      </label>
+      </span>
+      <span class="checkbox payment-radio">
+     <label for="wish_payment_type_19">
+        <input class="check_boxes required" id="wish_payment_type_19" name="wish[payment_type][]_19" type="checkbox" 
+
+value="LAB_918">LAB_918
+      </label> 
+      </span>
+      <span class="checkbox payment-radio">
+     <label for="wish_payment_type_24">
+        <input class="check_boxes required" id="wish_payment_type_24" name="wish[payment_type][]_24" type="checkbox" 
+
+value="LAB_G1">LAB_G1
+      </label><br> 
+      </span>
+      <span class="checkbox payment-radio">
+      <label for="wish_payment_type_5">
+        <input class="check_boxes required" id="wish_payment_type_5" name="wish[payment_type][]_5" type="checkbox" 
+
+value="DATASHOW_4">DATASHOW_4
+      </label> 
+      </span>
+      <span class="checkbox payment-radio">
+      <label for="wish_payment_type_10">
+        <input class="check_boxes required" id="wish_payment_type_10" name="wish[payment_type][]_10" type="checkbox" 
+
+value="LAB_907_A">LAB_907_A
+      </label>
+      </span>
+      <span class="checkbox payment-radio">
+     <label for="wish_payment_type_15">
+        <input class="check_boxes required" id="wish_payment_type_15" name="wish[payment_type][]_15" type="checkbox" 
+
+value="LAB_911">LAB_911
+      </label>
+      </span>
+      <span class="checkbox payment-radio">
+     <label for="wish_payment_type_20">
+        <input class="check_boxes required" id="wish_payment_type_20" name="wish[payment_type][]_20" type="checkbox" 
+
+value="LAB_919">LAB_919
+      </label>
+      </span>
+      <span class="checkbox payment-radio">
+     <label for="wish_payment_type_25">
+        <input class="check_boxes required" id="wish_payment_type_25" name="wish[payment_type][]_25" type="checkbox" 
+
+value="LAB_G2">LAB_G2
+      </label><br> 
+      </span>
+      <span class="checkbox payment-radio">
+      <label for="wish_payment_type_6">
+        <input class="check_boxes required" id="wish_payment_type_6" name="wish[payment_type][]_6" type="checkbox" 
+
+value="DATASHOW_5">DATASHOW_5
+      </label> 
+      </span>
+      <span class="checkbox payment-radio">
+      <label for="wish_payment_type_11">
+        <input class="check_boxes required" id="wish_payment_type_11" name="wish[payment_type][]_11" type="checkbox" 
+
+value="LAB_907_B">LAB_907_B
+      </label>
+      </span>
+      <span class="checkbox payment-radio">
+     <label for="wish_payment_type_16">
+        <input class="check_boxes required" id="wish_payment_type_16" name="wish[payment_type][]_16" type="checkbox" 
+
+value="LAB_912">LAB_912
+      </label>
+      </span>
+      <span class="checkbox payment-radio">
+     <label for="wish_payment_type_21">
+        <input class="check_boxes required" id="wish_payment_type_21" name="wish[payment_type][]_21" type="checkbox" 
+
+value="LAB_920">LAB_920
+      </label> 
+      </span>
+      <span class="checkbox payment-radio">
+     <label for="wish_payment_type_26">
+        <input class="check_boxes required" id="wish_payment_type_26" name="wish[payment_type][]_26" type="checkbox" 
+
+value="LAB_G3">LAB_G3
+      </label><br> 
+      </span>
+      </div>
+     </div>
+
+ <!-- SINGLE LINE TEXT FIELD -->
+      <label for="senha">SENHA</label>
+      <input type="password" id="senha" name="SENHA" pattern="c167yg|io4yuu|ed9nje|phinam|sg7tcs|8fk4c8|bln598|528901|t7s3kt|f41dn3|wm87hb|5imjel|hupjb7|uw4eof|zu9pyn|jk0ih7|jdgwmk|7u6m47|jpseu8|kjskzh|7728300|y9soh0|mq4sch|4a20nx|1278435|fc6zmw|7bupp2|901128|2147731|sardinha|lpfs9r|a99tpx|7dy88x|xn6ej6|6md02y|2de7xe|pydphs|dfx1du|o19k6i|h2wlrn|9jrehe|ix2mda|6gft8i|em9ey6|m6y8hg|mhq4ly|9ul18o|25w7ot|gt7gyw|cbr19z|7m7ohj|cg5n83|30zpyd|a5x7bk|semb5m|13zyh7|8ke3zc|xs3l8r|o8mc6o|nps0qo|cii17q|z513yp|6k90w7|hb6ud2|9qhsgz|8j8gb5|y00oso|5p04fm|2nny8r|q88yqf|npolwp|hjg8z0|mufdok|pgy35x|klujac|por41e|k8or6d|hjzmmd|y2kmwg|97rugs|at33xn|338n0z|7zhlr9|0jlc42|40qsru|1sftl2|7ew5sl|upb32s|3s3euy|6pnn86|9zoej1|7g6scp|5y57qy|pkgjo2|7lhl0f|hz5x4e|n1lkkn|0fbwcs|js3p2i|h0uobk|ujaq65|wkx7w7|kldm7f|5gzyxr|64hqjj|25s3lp|y71l4m|ifylrw|rm3gbp|z8j7pt|hho0b0|g0y8br|kjy9wf|udsoku|4asd78|yegc5i|2c8pa9|8ljwk6|26alkk|6ekpii|n6nu8i|31l1gl|1exb17|7t475e|i2jthr|3woggn|p9e11k|cspzth|xr1rpx|wzo6iw|7oahhy|mwilr6|yyatb4|7s58oe|maebid|0gs1o0|p1myc4|t1sult|ojdjhr|otssw1|xm7fdl|6scigf|d17xlj|h1skb1|3qkla7|cxj93m|l06o9c|ud4r0g|277ki9|bbpmmp|jpdsp6|61x2gw|51zzjp|5bn3mw|2nxi1a|ybp1t5|yqxkj3|7etx44|cz5psh|bkwzsn|zhoe99|axpx8z|q54bry|5um0b5|8cgu10|8q7mu7|lwt1js|q0nk16|8wrlms|gkun5m|e33cfo|9rasij|b0apa1|m8n4j0|nqa956|l9zfb5|uamutw|5ul5bm|xnlaiu|0wc1u7|udrwo0|uhks8x|hldnwz|1qk83b|1o8dt1|ye4f1j|6lqg5p|3d27qo|wi57hz|89d7cy|y02s6s|225j81|025r0m|6mu1j2|pi1tf4|h4tamp|tfipoh|geacx0|otc9km|21wtl2|ntw7u9|neewtt|41y44l|ti5xig|aa7wtj|n73a5n|9jse6d|y05mtz|ye7t2f|02gyn1|72z12t|f24y60|1upw7a|kweif7|o5zutd|lq6bhy|unppbm|f37wp5|w1q19x|ynsn9c|qlsmm1|b8frng|4sa2fp|x1hdsg|1gujuu|lc65pj|xqh29w|93e9wk|pibxmt|4d1pml|5rjmys|2daz0q|5tq4qp|kda4x5|cy9eex|l9ewl3|ee6f4w|wzgcty|r41syo|o1co5g|bhfg3r|97w5cq|rzfy2z|ljsd3h|ri9tx4|0yc645|n33az6|qgux5m|mhx6kq|d2zdll|7c9a84|6myzmn|u4ugqp|t3xgz8|y30m6c|y4ey4d|s0qhp3|ubyfhe|w18j8y|hwq89n|ayhflc|i53zcj|sykg4s|lpjk0i|874p53|36qbb3|ekz8a2|hspr0j|ac0kmp|slnn2j|hufzxh|s2rh0r|a8app1|0q4q1h|7kskzk|u660wt|7elpmc|7ma83q|zt7sbz|08ajjz|a83rt7|rl232k|ezaw57|5noap9|2skiuf|1uetdz|ruako3|usrufn|sa17bg|640hdk|n46ro9|h6uiga|b1stmz|750y31|50wu7z|6lt348|3b4nkb|nl375f|x2bmq5|dlu07s|o349xy|7p024a|3ilwgh|23a4fq|zj2j90|2otxng|klwbdp|b7zns5|wlywf4|c5d5ed|u7set7|k5j76m|m8jcm3|78fwtk|pwftrk|ycihg2|eqynnu|11sb36|514amo|l3bqns|2buaj1|3nir2x|ctowui|rp9mpm|11g2it|kbw6b5|y5j7mc|tow9ag|hsxh5c|uw41od|l0e8wg|4kbeho|g13204|98nwfi|z05srk|w4a13x|7x791e|n76h0x|bzwpk1|y9rtsa|4f556y|r3lp2c|ufarm0|fop150|ss0bdj|b8o73k|ule617|9lca4p|095g00|7jjykn|7mllje|x5p12h|y1t11n|hrmdzd|3wmdjy|rga3sk|7ffn67|utzelq|ss95wy|9pjlst|9a0a4j|k2oqfk|n15d6g|uoztkl|hj1rwk|cwl3wf|c67qmd|215x51|4pgt9q|5h0w0l|727iut|oxqle4|p6wksq|cn7i77|z2epo5|2ly0ti|j861kb|u17gcq|xe4tn1|cdt6u4|icxueu|iqa3fh|5i2pox|jrxe97|3ban8w|hgz524|pbkq5q|z0zqfd|epw1tu|zmxz1u|l82a4t|4kuf2p|wqgl8m|pc3b4m|xs0jhq|5tpxtk|hou3tn|if4pr2|374w8y|8uhz5p|g09wns|6u8rnr|5xyzdf|r6cmra|bqwifq|ylhy8u|h5gfmu|xhhk7l|pphs2z|t4gfdl|x1y5ox|qwrx24|iocp0a|1gp9zi|yjc4og|gc857n|rnaab2|4jg706|7rdmq2|wfbyaq|5ht3cr|gu6gw7|8qhen8|bkpey7|7jd98e|p3lawo|r3an9w|l7cscp|qe17jp|5g08gz|cxroxe|3e84r7|p35rm7|84c02l|fxs6uz|uyldc9|i6dg0w|dfp8y3|6xx8mo|ksb3ox|s9l5co|4kk8rb|uuhat5|3qsqp5|60o8t3|wd3785|l3gx2y|zmj6n4|2gkky0|gtpura|nddhbb|cn5jbx|80ahwn|coumzi|d53tql|t5pycq|0f4uo6|imwiui|wyxgbl|oehizy|tjt97w|px1khf|hqs3ze|bl2yr3|a78ifx|607qz4|cfq3qz|9yfsq5|ysgphy|jhwip1|6mq33g|x6le02|4zqai7|56qbmy|0x6m6l|e2zwus|2ioene|7h4nhc|8hcbsf|u7r6cn|jzmq19|lc09e6|ooq0pd|sokwq4|1c1j93|yirazj|9al09q|wo5cel|gy1qji|lbkclk|69so9i|z9ja0j|rlyno2|0uqqc1|0n2ape|lmd42d|dqcmq2|w9ekmt|dcftth|kjudkb|hwolpg|otxr6e|ksdp4p|97reqb|m2k76u|9dhnpx|t5hgne|kzxneq|4eolj6|nwyztt|ksyr6e|fq9mxn|q8cemg|wglasu|66huw1|f6k3oh|8ty77l|kojmsx|tf36gl|rcizy5|q321xg|8u1wsy|83digx|512yy8|afbj50|els6cg|db14xj|swdw4k|jzccn0|ao6cz1|23cl0f|r3gjy4|tgpy3j|8d9bfn|1g3yir|oblqnc|w652gt|w01cnu|lmyln3|0fas3j|ahllzz|nlwje2|40su37|gej4qy|yg4yzx|705ict|8q6t1a|mu16gt|3mzdhf|15mutc|ir2d04|yzltjc|uwxls4|5lguon|1gjd24|fal8ec|331ena|g8x4jf|yfq406|iqdru5|l16yzb|0r4qxh|r3fexp|kkw1fl|yn316o|xift65|uxnpda|xw430q|ja2528|hqlaii|o6rupo|pbb3qf|4d1y7r|fgr7ck|5j1hka|qz68kl|n1mpt3||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||"  required>
+
+ 
+      <!-- MULTI-LINE TEXT FIELD -->
+      <label for="obs">OBSERVAÇÕES</label>
+      <textarea name="OBSERVAÇÕES" id="obs"></textarea>
+
+     
+
+      
+<!-- SUBMIT BUTTON -->
+   
+
+
+ 
+    <input id='submit' type="submit"   value="REGISTRAR">
+     <script>
+     var verifyPaymentType = function () {
+  var checkboxes = $('.wish_payment_type .checkbox');
+  var inputs = checkboxes.find('input');
+  var first = inputs.first()[0];
+  inputs.on('change', function () {
+    this.setCustomValidity('');
+  });
+
+  first.setCustomValidity(checkboxes.find('input:checked').length === 0 ? 'Escolha pelo menos uma das opções' : '');
+}
+
+$('#submit').click(verifyPaymentType);
+
+ </script> 
+ 
+  </form>
+  </body>
+  </div>
+</section>
+   
+  <!-- Custom Theme JavaScript -->
+  <script src='google-sheet.js'></script>
+<HEAD>
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="-1">
+</HEAD>
+</html>
+
