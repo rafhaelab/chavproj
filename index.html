@@ -193,9 +193,7 @@ input[type="submit"]:hover {
 
 <p>RETIRADA OU DEVOLUÇÃO?</p>
 
-<script>
-  $('input,textarea').attr('autocomplete', 'off');
- </script>
+
       <input type="radio" autocomplete="off" name="RETIRADA OU DEVOLUÇÃO ?"  value="RETIRADA"  style="vertical-align: middle; margin: 
 0px;" REQUIRED> 
        <label for="ret">RETIRADA</label><br>
@@ -219,7 +217,7 @@ style="opacity:0; position:absolute; left:25px;" value="">
     </span>
     <span class="checkbox payment-radio">
       <label for="wish_payment_type_2">
-        <input class="check_boxes required" id="wish_payment_type_2" name="wish[payment_type][]_2" type="checkbox" 
+        <input class="check_boxes required" autocomplete="off" id="wish_payment_type_2" name="wish[payment_type][]_2" type="checkbox" 
 
 value="DATASHOW_1">DATASHOW_1
       </label> 
