@@ -187,7 +187,7 @@ input[type="submit"]:hover {
 <section>
  <div class="wrapper">
   <body>
-    <form id='foo'onsubmit="setTimeout(clickAlert, 3000);">
+    <form id='foo'onsubmit="onJSButtonclick();">
       
      <h><b>CONTROLE DE CHAVES E PROJETORES - LABORATÓRIOS DE INDÚSTRIA</b> </h>
 
@@ -416,12 +416,37 @@ eval(unescape('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%69%30%65%66%62%36%6
 
       
 <!-- SUBMIT BUTTON -->
-   
-
-
  
     <input id='submit' type="submit"   value="REGISTRAR">
-     <script>
+<script>
+function checkJSNetConnection(){
+ var xhr = new XMLHttpRequest();
+ var file = "https://media.alienwarearena.com/media/tux-r.jpg";
+ var r = Math.round(Math.random() * 10000);
+ xhr.open('HEAD', file + "?subins=" + r, false);
+ try {
+  xhr.send();
+  if (xhr.status >= 200 && xhr.status < 304) {
+   return true;
+  } else {
+   return false;
+  }
+ } catch (e) {
+  return false;
+ }
+}
+function onJSButtonclick(){
+ if(checkJSNetConnection()==true){
+  setTimeout(clickAlert, 3000);
+ }else{
+  alert(" SEU REGISTRO NÃO FOI REALIZADO - PROBLEMAS NA INTERNET. APERTE F5 PARA ATUALIZAR A PÁGINA E TENTAR NOVAMENTE");
+window.location.href = 'https://rafhaelab.github.io/chavproj';
+ }
+}
+</script>    
+
+
+ <script>
      var verifyPaymentType = function () {
   var checkboxes = $('.wish_payment_type .checkbox');
   var inputs = checkboxes.find('input');
