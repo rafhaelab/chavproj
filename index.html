@@ -176,6 +176,9 @@ input[type="submit"]:hover {
   cursor: pointer;
 }
 </style>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
@@ -439,7 +442,7 @@ function onJSButtonclick(){
  if(checkJSNetConnection()==true){
   setTimeout(clickAlert, 3000);
  }else{
-  alert(" SEU REGISTRO NÃO FOI REALIZADO - PROBLEMAS NA INTERNET. APERTE F5 PARA ATUALIZAR A PÁGINA E TENTAR NOVAMENTE");
+  alert(" SEU REGISTRO NÃO FOI REALIZADO - SEM CONEXÃO COM A INTERNET");
 window.location.href = 'https://rafhaelab.github.io/chavproj';
  }
 }
